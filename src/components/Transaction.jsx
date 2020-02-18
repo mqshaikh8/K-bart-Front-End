@@ -8,7 +8,7 @@ class transaction extends Component {
     }    
 
     componentDidMount() {
-        fetch(`http://localhost:3000/items/personal/${localStorage.user}`)
+        fetch(`https://k-bart-backend.herokuapp.com/items/personal/${localStorage.user}`)
         .then(r => r.json())
         .then(res => {
             console.log(res)

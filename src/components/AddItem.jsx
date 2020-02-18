@@ -15,7 +15,7 @@ class AddItem extends Component {
 
         let {name, price, description} = e.target
 
-        fetch('http://localhost:3000/items/', {
+        fetch('https://k-bart-backend.herokuapp.com/items/', {
             method: "POST",
             headers: {
                     'content-type': 'application/json'

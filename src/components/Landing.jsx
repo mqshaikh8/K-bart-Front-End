@@ -12,7 +12,7 @@ class Landing extends Component {
 
 
     componentDidMount() {
-        fetch("http://localhost:3000/items")
+        fetch("https://k-bart-backend.herokuapp.com/items")
         .then(r => r.json())
         .then(res => {
             this.setState({

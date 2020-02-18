@@ -18,7 +18,7 @@ class App extends Component {
     if (localStorage.getItem("token")) {
       let token = localStorage.getItem("token")
 
-      fetch("http://localhost:3000/persist", {
+      fetch("https://k-bart-backend.herokuapp.com/persist", {
         headers: {
           "Authorization": `bearer ${token}`
         }
@@ -52,7 +52,7 @@ class App extends Component {
     
 
   handleSubmit= (name,emailLogin,passwordIdentification,credits,rating,bio) => {
-    fetch('http://localhost:3000/users', {
+    fetch('https://k-bart-backend.herokuapp.com/users', {
       method: "POST",
       headers: {
                 'Content-Type': 'application/json'

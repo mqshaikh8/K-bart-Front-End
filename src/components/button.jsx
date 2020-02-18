@@ -3,7 +3,7 @@ import { Button } from 'semantic-ui-react';
 class button extends Component {
     handleClick = () => {
         
-        fetch("http://localhost:3000/items/buy",{
+        fetch("https://k-bart-backend.herokuapp.com/buy",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"

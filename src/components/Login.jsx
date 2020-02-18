@@ -18,7 +18,7 @@ class Login extends Component {
         evt.preventDefault()
         const {username,password} = this.state
         
-        fetch("http://localhost:3000/users/login",{
+        fetch("https://k-bart-backend.herokuapp.com/login",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
